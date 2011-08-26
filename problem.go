@@ -12,5 +12,19 @@ million, find the sum of the even-valued terms.
 package sdegutishomework
 
 func fibonacci(i int) int {
-  return 0
+  first := 1
+  second := 2
+  if i == 0 {
+    return first
+  }
+  if i == 1 {
+    return second
+  }
+  current := 0
+  for n := 2; n <= i; n++ {
+    current = first + second
+    first = second
+    second = current
+  }
+  return current
 }

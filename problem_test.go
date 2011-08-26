@@ -7,7 +7,7 @@ import (
 
 func TestInitializer(t *testing.T) {}
 
-func init() {
+func TestFib(t *testing.T) {
   defer PrintSpecReport()
   
   Describe("fibonacci", func() {
